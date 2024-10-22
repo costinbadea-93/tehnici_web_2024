@@ -1,0 +1,7 @@
+
+X
+java:S1854"6Remove this useless assignment to local variable "b2".(÷Ø”±şÿÿÿÿ8İ§Âç¦2
+I
+java:S1481"'Remove this unused "b2" local variable.(÷Ø”±şÿÿÿÿ8à§Âç¦2
+G	java:S106"+Replace this use of System.out by a logger.(—Ş“8ÚóÀç¦2
+X	java:S125"<This block of commented-out lines of code should be removed.(‘™˜Ò8ÚóÀç¦2
