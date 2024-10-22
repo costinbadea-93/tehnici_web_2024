@@ -1,0 +1,27 @@
+
+g	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8àê‹¨«2
+k
+java:S1192"IDefine a constant instead of duplicating this literal "Calling " 3 times.(œ°ªııÿÿÿÿ8áê‹¨«2
+L	java:S106"+Replace this use of System.out by a logger.(œ°ªııÿÿÿÿ8éê‹¨«2
+G	java:S106&"+Replace this use of System.out by a logger.(Ôîî˜8êê‹¨«2
+[
+java:S1854,">Remove this useless assignment to local variable "methodArgs".(ÅÄ±œ8êê‹¨«2
+L
+java:S1481,"/Remove this unused "methodArgs" local variable.(ÅÄ±œ8ëê‹¨«2
+G	java:S106."+Replace this use of System.out by a logger.(° ®€8ëê‹¨«2
+[
+java:S18544">Remove this useless assignment to local variable "methodArgs".(ÅÄ±œ8ëê‹¨«2
+L
+java:S14814"/Remove this unused "methodArgs" local variable.(ÅÄ±œ8ëê‹¨«2
+G	java:S1066"+Replace this use of System.out by a logger.(Ù…ãŠ8ìê‹¨«2
+`
+java:S1854<">Remove this useless assignment to local variable "methodArgs".(Õñâ±ùÿÿÿÿ8ìê‹¨«2
+`
+java:S1854;">Remove this useless assignment to local variable "methodName".(›‰áÆøÿÿÿÿ8ìê‹¨«2
+Q
+java:S1481;"/Remove this unused "methodName" local variable.(›‰áÆøÿÿÿÿ8ìê‹¨«2
+Q
+java:S1481<"/Remove this unused "methodArgs" local variable.(Õñâ±ùÿÿÿÿ8ìê‹¨«2
+L	java:S106B"+Replace this use of System.out by a logger.(ÔÇ¼Üşÿÿÿÿ8¾³¨«2
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8îê‹¨«2
