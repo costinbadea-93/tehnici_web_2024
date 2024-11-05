@@ -1,10 +1,9 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(‘ûÈüùÿÿÿÿ8ËÍ¡É­2
-F	java:S106"+Replace this use of System.out by a logger.(Á¨8ËÍ¡É­2
-G	java:S106"+Replace this use of System.out by a logger.(ÍĞï8ËÍ¡É­2
-G	java:S106!"+Replace this use of System.out by a logger.(§ø’í8ËÍ¡É­2
-G	java:S106""+Replace this use of System.out by a logger.(íúı™8´¢É­2
-L	java:S106$"+Replace this use of System.out by a logger.(»¬ùØøÿÿÿÿ8Ô‹±É­2
-G	java:S106%"+Replace this use of System.out by a logger.(•ÏçË8Ô‹±É­2
-Q
-java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8ÒÖ£É­2
+L	java:S106"+Replace this use of System.out by a logger.(‘ûÈüùÿÿÿÿ8¬ƒ¯À®2
+F	java:S106"+Replace this use of System.out by a logger.(Á¨8¬ƒ¯À®2
+G	java:S106"+Replace this use of System.out by a logger.(ÍĞï8­ƒ¯À®2
+G	java:S106"+Replace this use of System.out by a logger.(§ø’í8­ƒ¯À®2
+G	java:S106 "+Replace this use of System.out by a logger.(íúı™8­ƒ¯À®2
+L	java:S106""+Replace this use of System.out by a logger.(»¬ùØøÿÿÿÿ8­ƒ¯À®2
+G	java:S106#"+Replace this use of System.out by a logger.(•ÏçË8®ƒ¯À®2
+G	java:S106%"+Replace this use of System.out by a logger.(ÎÉË‹8®ƒ¯À®2

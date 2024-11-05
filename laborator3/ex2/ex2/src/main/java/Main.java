@@ -3,8 +3,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import service.ServerConfigService;
 import utils.UtilService;
 
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ContextConfiguration.class);
@@ -35,6 +33,8 @@ public class Main {
 
         System.out.println("Printing value s1: "  + s1.getUtilService().getNumberOfAvailablePorts());
         System.out.println("Printing value s2: "  + s2.getUtilService().getNumberOfAvailablePorts());
+
+        System.out.println("0082335e-9f61-9467-09b6-e99fd73cc4a6".trim());
 
     }
 }
