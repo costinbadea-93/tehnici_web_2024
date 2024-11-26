@@ -1,0 +1,18 @@
+
+Z
+java:S1854"8Remove this useless assignment to local variable "list".(¹¤€®şÿÿÿÿ8ˆüÑ´2
+X	java:S125"<This block of commented-out lines of code should be removed.(ßí÷È8ô¤‡Ñ´2
+G	java:S106"+Replace this use of System.out by a logger.(Æ½œ“8Æ‘‰Ñ´2
+o
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ĞüÑ´2
+K
+java:S1481")Remove this unused "list" local variable.(¹¤€®şÿÿÿÿ8üÑ´2
+G	java:S106!"+Replace this use of System.out by a logger.(¢ŸÕ8Û”Öõ´2
+^
+java:S1128"<Remove this unused import 'contextcfg.ContextConfiguration'.(ëò¥œûÿÿÿÿ8—õØõ´2
+‚
+java:S1128"fRemove this unused import 'org.springframework.context.annotation.AnnotationConfigApplicationContext'.(€¡¹;8—õØõ´2
+`
+java:S1128">Remove this unused import 'service.DatabaseConnectionService'.(¹œğ°üÿÿÿÿ8—õØõ´2
+Q
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8—õØõ´2

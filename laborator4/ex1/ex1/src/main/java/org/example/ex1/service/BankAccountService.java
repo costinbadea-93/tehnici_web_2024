@@ -1,6 +1,9 @@
 package org.example.ex1.service;
 
+import jakarta.validation.Valid;
+import org.example.ex1.exceptions.BankAccountNotFound;
 import org.example.ex1.model.BankAccount;
+import org.example.ex1.repository.BankAccountRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -12,10 +15,13 @@ import java.util.List;
 public class BankAccountService {
 
     private final Logger LOGGER = LoggerFactory.getLogger(BankAccountService.class);
+    private final BankAccountRepository bankAccountRepository;
 
     private List<BankAccount> bankAccounts = new ArrayList<>();
 
-    public BankAccountService() {
+    public BankAccountService(BankAccountRepository bankAccountRepository) {
+        this.bankAccountRepository = bankAccountRepository;
+
         var b1 = BankAccount.builder()
                 .accountNumber("000501c5")
                 .accountOwner("Alex")
@@ -42,10 +48,16 @@ public class BankAccountService {
 
 
     public BankAccount saveNewBankAccount(BankAccount bankAccount) {
-        bankAccounts.add(bankAccount);
+//
+//        if(bankAccount.getAccountNumber() == null){
+//          throw new BankAccountNotFound("Account Number cannot be null");
+//        }
+
+//        bankAccounts.add(bankAccount);
 
         LOGGER.info("Saving new bank account: {}", bankAccount);
-        return bankAccount;
+//        return bankAccount;
+        return bankAccountRepository.create(bankAccount);
     }
 
     public void removeBankAccount(String accountNumber) {
@@ -62,8 +74,9 @@ public class BankAccountService {
     }
 
     public List<BankAccount> getBankAccounts() {
-        LOGGER.info("Getting bank accounts: {}", bankAccounts);
-        return bankAccounts;
+//        LOGGER.info("Getting bank accounts: {}", bankAccounts);
+//        return bankAccounts;
+        return bankAccountRepository.findAll();
     }
 
 }

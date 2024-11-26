@@ -1,11 +1,18 @@
 package org.example.ex1.controller;
 
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Valid;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.example.ex1.exceptions.BankAccountNotFound;
 import org.example.ex1.model.BankAccount;
 import org.example.ex1.service.BankAccountService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @AllArgsConstructor
@@ -58,9 +66,15 @@ public class BankAccountRestController {
     }
 
     @PostMapping("/new")
-    public ResponseEntity<BankAccount> createBankAccount(@RequestBody BankAccount bankAccount) {
-        return ResponseEntity
-                .status(HttpStatus.CREATED)
-                .body(bankAccountService.saveNewBankAccount(bankAccount));
+    public ResponseEntity<?> createBankAccount(@RequestBody @Valid BankAccount bankAccount) {
+//        Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+//        Set<ConstraintViolation<BankAccount>> violations = validator.validate(bankAccount);
+//        try{
+            return ResponseEntity
+                    .status(HttpStatus.CREATED)
+                    .body(bankAccountService.saveNewBankAccount(bankAccount));
+//        }catch (BankAccountNotFound bankAccountNotFound){
+//            return ResponseEntity.badRequest().body(bankAccountNotFound.getMessage());
+//        }
     }
 }
