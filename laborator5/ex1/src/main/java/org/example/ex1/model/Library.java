@@ -14,6 +14,6 @@ import java.util.List;
 public class Library {
     private int id;
     private String name;
-    private String location;
+    private String description;
     private List<Book> books;
 }
