@@ -4,6 +4,9 @@ import org.example.exexam.dto.PaymentDto;
 import org.example.exexam.repository.PaymentRepository;
 import org.example.exexam.utils.PaymentStatus;
 import org.example.exexam.utils.PaymentType;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -20,6 +23,25 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(SpringExtension.class)
 public class PaymentServiceTest {
+
+    @BeforeEach
+        //this method is invoked before the execution of every test
+    void setUp() {
+        //common code, useful for every test in this class
+    }
+
+    @BeforeAll //this method executes only once, before all tests (when the test class is prepared to be run)
+    static void beforeAll() {
+        //connection to a db for an integration test
+        //preparing a file
+        //setting of application properties
+    }
+
+    @AfterEach
+        //this method is invoked after the execution of every test
+    void tearDown() {
+
+    }
 
     @Mock
     private PaymentRepository paymentRepository;
